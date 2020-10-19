@@ -1,17 +1,16 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import {PRICE} from '../utils/constants';
+import { PRICE } from "../utils/constants";
 
 const Pricing = (props) => {
-  const title = props.title || 'Pricing & General Policies';
+  const title = props.title || "Pricing & General Policies";
   return (
     <div className="bg-light p-t-50 p-b-40">
       <div className="container">
         <div className="row">
           <div className="col s12">
-            <h5 className="text-line">
-              {title}
-            </h5>
+            <h5 className="text-line">{title}</h5>
           </div>
         </div>
         <div className="row">
@@ -20,24 +19,16 @@ const Pricing = (props) => {
               <div className="col s12 l6">
                 <div className="card-panel brown white-text center-align no-padding">
                   <div className="p-t-50 p-b-50">
-                    <h5>
-                      WEEKDAYS
-                    </h5>
-                    <h1 className="m-t-10 under">
-                      {PRICE.DAILY}
-                    </h1>
+                    <h5>WEEKDAYS</h5>
+                    <h1 className="m-t-10 under">{PRICE.DAILY}</h1>
                   </div>
                 </div>
               </div>
               <div className="col s12 l6">
                 <div className="card-panel brown white-text center-align no-padding">
                   <div className="p-t-50 p-b-50">
-                    <h5>
-                      WEEKENDS & HOLIDAYS
-                    </h5>
-                    <h1 className="m-t-10 under">
-                      {PRICE.WEEKENDS}
-                    </h1>
+                    <h5>WEEKENDS & HOLIDAYS</h5>
+                    <h1 className="m-t-10 under">{PRICE.WEEKENDS}</h1>
                   </div>
                 </div>
               </div>
@@ -54,7 +45,12 @@ const Pricing = (props) => {
               <li>Must be 18 or older to enter without supervision</li>
             </ul>
             <div className="center-align">
-              <a href="/policy" className="brown waves-effect waves-light btn m-t-5">Read More</a>
+              <Link
+                to="/policy"
+                className="brown waves-effect waves-light btn m-t-5"
+              >
+                Read More
+              </Link>
             </div>
           </div>
         </div>

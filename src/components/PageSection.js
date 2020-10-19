@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const PageSection = props => {
+const PageSection = (props) => {
   const { title, children } = props;
   return (
     <div className="row container">
@@ -20,7 +21,8 @@ const PageSection = props => {
           <h6>
             We value our guests and strive to provide rewarding experience to
             all. In order to do this, we encourage each guest to review and
-            understand our <a href="/policy">general policy & spa etiquette</a>.
+            understand our{" "}
+            <Link to="/policy">general policy & spa etiquette</Link>.
           </h6>
           <div className="center-align">
             <a
