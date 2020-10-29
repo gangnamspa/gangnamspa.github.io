@@ -94,6 +94,7 @@ function App() {
   const history = useHistory();
 
   const enableModal = false;
+  const enableBanner = false;
   const logoWidth = isMobileOnly ? "256" : "128";
   const logoClass = isMobileOnly ? "center-align" : "";
 
@@ -190,7 +191,7 @@ function App() {
             </div>
           </Modal>
         )}
-        {PROMOTION_BANNER ? (
+        {enableBanner ? (
           <div className="row brown white-text center-align">
             <div className="container">
               <h5

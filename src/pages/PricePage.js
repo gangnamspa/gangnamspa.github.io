@@ -44,14 +44,14 @@ const PricePage = () => {
               <td>Ages Under 4</td>
               <td>FREE</td>
             </tr> */}
-            <tr>
+            {/* <tr>
               <td colSpan="2">
                 <b>Overnight Fee </b>: Customers staying in between midnight to
                 4am will be charged overnight fee. After 24 hours, guests will
                 be charged another entrance fee. Please note there is no reentry
                 once you have checked in.
               </td>
-            </tr>
+            </tr> */}
             {/* Body Scrub */}
             <tr>
               <td>

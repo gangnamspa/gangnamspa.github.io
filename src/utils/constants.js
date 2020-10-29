@@ -4,7 +4,7 @@ export const PHONE = "281-859-9888";
 export const PHONE_FORMATTED = "281 - 859 - 9888";
 export const STREET = "4055 Hwy 6 North";
 export const CITY_STATE = "Houston, TX 77084";
-export const HOURS = `Mon-Thu: 10am - 9pm\n Fri-Sun, Holidays:\n10am - 11pm`;
+export const HOURS = `Sun-Thu: 10am - 10pm\n Fri, Sat & Holidays:\n10am - 11pm`;
 export const EMAIL = "spagangnam@gmail.com";
 export const PRICE = {
   DAILY: "$39",
