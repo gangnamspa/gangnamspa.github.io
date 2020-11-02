@@ -24,11 +24,11 @@ const PricePage = () => {
             {/* Admission */}
             <tr>
               <td>
-                <b>Admission</b>
+                <b>ADMISSION</b>
                 <br />
                 <small>includes use of all facilities</small>
                 <br />
-                <small>services excluded</small>
+                <small>services, restaurant, and products excluded</small>
               </td>
               <td>
                 $39 (weekdays)
@@ -55,13 +55,13 @@ const PricePage = () => {
             {/* Body Scrub */}
             <tr>
               <td>
-                <b>Body Scrub</b>
+                <b>BODY SCRUB</b>
               </td>
               <td />
             </tr>
             <tr>
               <td>
-                Basic Scrub
+                Basic Scrub (30 minutes)
                 <br />
                 <small>Korean traditional body scrub only</small>
               </td>
@@ -70,7 +70,7 @@ const PricePage = () => {
             </tr>
             <tr>
               <td>
-                Premium Scrub
+                Premium Scrub (1 hour)
                 <br />
                 <small>Korean traditional body scrub with oil massage</small>
               </td>
@@ -79,12 +79,33 @@ const PricePage = () => {
             </tr>
             <tr>
               <td>
-                Premium Scrub with Facial
+                Premium Scrub with Facial (1 hour and 20 minutes)
                 <br />
                 <small>Premium scrub with cucumber facial mask</small>
               </td>
 
               <td>$130</td>
+            </tr>
+            <tr>
+              <td>
+                Premium Gold Scrub ( 1 hour and 30 minutes)
+                <br />
+                <small>
+                  Premium scrub with gold oil massage and facial massage
+                </small>
+              </td>
+
+              <td>$160</td>
+            </tr>
+            <tr>
+              <td>
+                <small>
+                  ** All premium scrubs come with hair wash. However, it can be
+                  excluded from the package. When booking, please let us know to
+                  substitute more time on the scrub or massage.
+                </small>
+              </td>
+              <td />
             </tr>
             {/* Massage */}
             <tr>
@@ -97,34 +118,54 @@ const PricePage = () => {
 
             <tr>
               <td>
-                GangNam Special (90min)
+                GangNam Spa Special (1 hour and 40 minutes)
                 <br />
-                <small>Combo/ Aroma</small>
+                <small>
+                  Am in depth gold mask pack, aroma oil and hot stone massage
+                </small>
               </td>
-              <td>$180</td>
+              <td>$250</td>
             </tr>
 
             <tr>
               <td>
-                Daily Massage (60min)
+                GangNam Couple Special Gold Course (2 hours)
                 <br />
-                <small>Body massage with facial mask</small>
+                <small>
+                  An in depth body massage with gold mask pack, gold nano oil
+                  and hot stone massage
+                </small>
+              </td>
+              <td>$490</td>
+            </tr>
+
+            <tr>
+              <td>
+                Daily Massage (1 hour)
+                <br />
+                <small>
+                  Body massage with oil massage in upper body and acupressure
+                  massage in the lower body
+                </small>
               </td>
 
-              <td>$90</td>
+              <td>$100</td>
             </tr>
             <tr>
               <td>
-                Daily Massage (90min)
+                Daily Massage (1 hour 30 minutes)
                 <br />
-                <small>Body massage with facial mask</small>
+                <small>
+                  Body massage with oil massage in upper body and acupressure
+                  massage in the lower body with facial mask
+                </small>
               </td>
 
               <td>$130</td>
             </tr>
             <tr>
               <td>
-                Combo Massage (90min)
+                Combo Massage (1 hour 30 minutes)
                 <br />
                 <small>Body massage with facial and foot massages</small>
               </td>
@@ -134,19 +175,23 @@ const PricePage = () => {
             <tr>
               <td>Foot Massage (30min)</td>
 
-              <td>$40</td>
+              <td>$50</td>
             </tr>
             <tr>
               <td>Foot Massage (60min)</td>
 
-              <td>$70</td>
+              <td>$80</td>
             </tr>
             {/* Nails */}
             <tr>
               <td>
                 <b>NAILS</b>
+                <br />
+                <small>
+                  ** We are currently not taking any nails or facial
+                  appointments **
+                </small>
               </td>
-              <td />
               <td />
             </tr>
             <tr>
@@ -217,6 +262,11 @@ const PricePage = () => {
             <tr>
               <td>
                 <b>FACIAL</b>
+                <br />
+                <small>
+                  ** We are currently not taking any nails or facial
+                  appointments **
+                </small>
               </td>
               <td />
               <td />
