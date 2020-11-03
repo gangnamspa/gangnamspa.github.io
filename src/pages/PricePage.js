@@ -81,7 +81,7 @@ const PricePage = () => {
               <td>
                 Premium Scrub with Facial (1 hour and 20 minutes)
                 <br />
-                <small>Premium scrub with cucumber facial mask</small>
+                <small>Premium scrub with aroma facial mask pack</small>
               </td>
 
               <td>$130</td>
@@ -91,7 +91,7 @@ const PricePage = () => {
                 Premium Gold Scrub ( 1 hour and 30 minutes)
                 <br />
                 <small>
-                  Premium scrub with gold oil massage and facial massage
+                  Premium scrub with gold oil massage and facial mask pack
                 </small>
               </td>
 
@@ -121,7 +121,7 @@ const PricePage = () => {
                 GangNam Spa Special (1 hour and 40 minutes)
                 <br />
                 <small>
-                  Am in depth gold mask pack, aroma oil and hot stone massage
+                  An in depth gold mask pack, aroma oil and hot stone massage
                 </small>
               </td>
               <td>$250</td>
