@@ -147,6 +147,15 @@ function App() {
           <a className="menu-item" onClick={onClickMenu} data-url="/contact">
             CONTACT US
           </a>
+
+          <a
+            className="menu-item"
+            href="https://go.booker.com/location/GangnamSpa"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            BOOK A TREATMENT
+          </a>
         </Menu>
       )}
 
