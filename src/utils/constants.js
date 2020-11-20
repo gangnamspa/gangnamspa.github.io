@@ -1,3 +1,5 @@
+const currentDate = new Date();
+
 export const COMPANY_NAME = "GangNam Spa";
 export const PHONE_NUMBERS = "2818599889";
 export const PHONE = "281-859-9888";
@@ -12,7 +14,7 @@ export const PRICE = {
 };
 export const PROMOTION_BANNER = `Due to temporary limited capacity, we're now taking reservations. As for walk-in customers, it'll be first come first serve. To make a reservation, please give us call at 281-859-9888`;
 export const CURRENT_PROMOTION = "";
-export const ALL_RIGHTS = `© 2019 GangNam Spa. All rights reserved.`;
+export const ALL_RIGHTS = `© ${currentDate.getFullYear()} GangNam Spa. All rights reserved.`;
 export const DINING_MENU = {
   korean: [
     {
