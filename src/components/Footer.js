@@ -46,7 +46,7 @@ const Footer = () => {
             <h4>
               <a
                 className="m-r-10"
-                href="https://www.facebook.com/Gangnam-Spa-Houston-275003973187504/?modal=admin_todo_tour"
+                href="https://www.facebook.com/Gangnam-Spa-2136994659949416"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -55,7 +55,7 @@ const Footer = () => {
 
               <a
                 className="m-r-10"
-                href="https://www.instagram.com/gangnamspa0218"
+                href="https://www.instagram.com/gangnam_spahtx/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
