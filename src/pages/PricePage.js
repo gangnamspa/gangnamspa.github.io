@@ -121,7 +121,8 @@ const PricePage = () => {
                 GangNam Spa Special (1 hour and 40 minutes)
                 <br />
                 <small>
-                  An in depth gold mask pack, aroma oil and hot stone massage
+                  An in depth full body massage with gold mask pack, lavender
+                  aroma oil and hot stone massage
                 </small>
               </td>
               <td>$250</td>
@@ -132,8 +133,8 @@ const PricePage = () => {
                 GangNam Couple Special Gold Course (2 hours)
                 <br />
                 <small>
-                  An in depth body massage with gold mask pack, gold nano oil
-                  and hot stone massage
+                  An in depth full body massage with gold mask pack, 24k gold
+                  nano oil and hot stone massage
                 </small>
               </td>
               <td>$490</td>

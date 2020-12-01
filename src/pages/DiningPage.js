@@ -1,129 +1,254 @@
-import React from 'react';
+import React from "react";
 
-import PageHeader from '../components/PageHeader';
-import PageSection from '../components/PageSection';
+import PageHeader from "../components/PageHeader";
+import PageSection from "../components/PageSection";
 
-import {DINING_MENU} from '../utils/constants';
+import { DINING_MENU } from "../utils/constants";
 
-import imageKimbop from '../images/food/kimbop.jpg';
-import imageChicken from '../images/food/chicken.jpg';
-import imageColdNoodle from '../images/food/coldnoodle.jpg';
-import imageShavedIce from '../images/food/shaved_ice.jpg';
+import imageChicken from "../images/food/chicken.jpg";
+import imageTofuSoup from "../images/food/tofusoup.jpg";
+import imageBibimbap from "../images/food/bibimbap.jpg";
+import imageBulgogi from "../images/food/bulgogi.jpg";
+import imagePorkrice from "../images/food/porkrice.jpg";
+import imageJampong from "../images/food/jampong.jpg";
+import imagePancake from "../images/food/pancake.jpg";
+import imageColdNoodle from "../images/food/coldnoodle.jpg";
 
 const CardImage = (props) => {
-  const {imageSrc, imageAlt, cardTitle} = props;
+  const { imageSrc, imageAlt, cardTitle } = props;
   return (
     <div className="card">
       <div className="card-image">
-        <img src={imageSrc} alt={imageAlt}/>
+        <img src={imageSrc} alt={imageAlt} />
         <span className="card-title">{cardTitle}</span>
       </div>
     </div>
-  )
-}
+  );
+};
 
 const MenuItem = (props) => {
-  const {title, korean, price} = props;
+  const { title, korean, price } = props;
   return (
     <li className="collection-item">
-      {price > 0 && <span className="badge">${price}</span>}
+      <span className="badge">${price.toFixed(2)}</span>
       {title}
-      <br/>{korean}</li>
-  )
-}
+      <br />
+      {korean}
+    </li>
+  );
+};
 
 const DiningPage = () => {
   window.scrollTo(0, 0);
   return (
     <React.Fragment>
-      <PageHeader content="Dining"/>
-      <PageSection title="Korean">
+      <PageHeader content="Dining" />
+      {/* Soup */}
+      <PageSection title="SOUP">
         <div className="row">
           <div className="col s12 m6">
             <ul className="collection">
-              {DINING_MENU
-                .korean
-                .map((menu) => {
-                  const {title, korean, price} = menu;
-                  return (<MenuItem key={title} title={title} korean={korean} price={price}/>)
-                })}
+              {DINING_MENU.soup.map((menu) => {
+                const { title, korean, price } = menu;
+                return (
+                  <MenuItem
+                    key={title}
+                    title={title}
+                    korean={korean}
+                    price={price}
+                  />
+                );
+              })}
             </ul>
           </div>
           <div className="col s12 m6">
-            <CardImage imageAlt="kimbop" imageSrc={imageKimbop} cardTitle="Korean Rolls"/>
+            <CardImage imageAlt="tofu-soup" imageSrc={imageTofuSoup} />
           </div>
         </div>
       </PageSection>
-      <PageSection title="Chicken">
+
+      {/* Vegetables */}
+      <PageSection title="VEGETABLES">
         <div className="row">
           <div className="col s12 m6">
             <ul className="collection">
-              {DINING_MENU
-                .chicken
-                .map((menu) => {
-                  const {title, korean, price} = menu;
-                  return (<MenuItem key={title} title={title} korean={korean} price={price}/>)
-                })}
+              {DINING_MENU.vegetables.map((menu) => {
+                const { title, korean, price } = menu;
+                return (
+                  <MenuItem
+                    key={title}
+                    title={title}
+                    korean={korean}
+                    price={price}
+                  />
+                );
+              })}
+            </ul>
+          </div>
+        </div>
+      </PageSection>
+
+      {/* Rice */}
+      <PageSection title="RICE">
+        <div className="row">
+          <div className="col s12 m6">
+            <ul className="collection">
+              {DINING_MENU.rice.map((menu) => {
+                const { title, korean, price } = menu;
+                return (
+                  <MenuItem
+                    key={title}
+                    title={title}
+                    korean={korean}
+                    price={price}
+                  />
+                );
+              })}
+            </ul>
+          </div>
+          <div className="col s12 m6">
+            <CardImage imageAlt="bibimbap-img" imageSrc={imageBibimbap} />
+            <CardImage imageAlt="pork-rice-img" imageSrc={imagePorkrice} />
+          </div>
+        </div>
+      </PageSection>
+
+      {/* Noodles */}
+      <PageSection title="NOODLES">
+        <div className="row">
+          <div className="col s12 m6">
+            <ul className="collection">
+              {DINING_MENU.noodles.map((menu) => {
+                const { title, korean, price } = menu;
+                return (
+                  <MenuItem
+                    key={title}
+                    title={title}
+                    korean={korean}
+                    price={price}
+                  />
+                );
+              })}
+            </ul>
+          </div>
+          <div className="col s12 m6">
+            <CardImage imageAlt="jampong-img" imageSrc={imageJampong} />
+            <CardImage imageAlt="coldnoodle-img" imageSrc={imageColdNoodle} />
+          </div>
+        </div>
+      </PageSection>
+
+      {/* Meat and Other */}
+      <PageSection title="BEEF, PORK, FISH & OTHER">
+        <div className="row">
+          <div className="col s12 m6">
+            <ul className="collection">
+              {DINING_MENU.meat.map((menu) => {
+                const { title, korean, price } = menu;
+                return (
+                  <MenuItem
+                    key={title}
+                    title={title}
+                    korean={korean}
+                    price={price}
+                  />
+                );
+              })}
             </ul>
           </div>
           <div className="col s12 m6">
             <CardImage
-              imageAlt="chicken"
+              imageAlt="bulgogi"
+              imageSrc={imageBulgogi}
+              cardTitle="Bulgogi"
+            />
+          </div>
+        </div>
+      </PageSection>
+
+      {/* Chicken */}
+      <PageSection title="CHICKEN">
+        <div className="row">
+          <div className="col s12 m6">
+            <ul className="collection">
+              {DINING_MENU.chicken.map((menu) => {
+                const { title, korean, price } = menu;
+                return (
+                  <MenuItem
+                    key={title}
+                    title={title}
+                    korean={korean}
+                    price={price}
+                  />
+                );
+              })}
+            </ul>
+          </div>
+          <div className="col s12 m6">
+            <CardImage
+              imageAlt="chicken-image"
               imageSrc={imageChicken}
-              cardTitle="Soy Garlic Chicken"/>
+              cardTitle="Chicken"
+            />
           </div>
         </div>
       </PageSection>
-      <PageSection title="Seasonal">
+
+      {/* Fried */}
+      <PageSection title="FRIED">
         <div className="row">
           <div className="col s12 m6">
             <ul className="collection">
-              {DINING_MENU
-                .seasonal
-                .map((menu) => {
-                  const {title, korean, price} = menu;
-                  return (<MenuItem key={title} title={title} korean={korean} price={price}/>)
-                })}
+              {DINING_MENU.fried.map((menu) => {
+                const { title, korean, price } = menu;
+                return (
+                  <MenuItem
+                    key={title}
+                    title={title}
+                    korean={korean}
+                    price={price}
+                  />
+                );
+              })}
             </ul>
           </div>
           <div className="col s12 m6">
-            <CardImage
-              imageAlt="cold-noodle"
-              imageSrc={imageColdNoodle}
-              cardTitle="Cold Noodle"/>
+            <CardImage imageAlt="pancake-img" imageSrc={imagePancake} />
           </div>
         </div>
       </PageSection>
-      <PageSection title="Shaved Ice">
+
+      {/* Beverage / Bar */}
+      <PageSection title="BEVERAGE & BAR">
         <div className="row">
           <div className="col s12 m6">
             <ul className="collection">
-              {DINING_MENU
-                .shaved_ice
-                .map((menu) => {
-                  const {title, korean, price} = menu;
-                  return (<MenuItem key={title} title={title} korean={korean} price={price}/>)
-                })}
+              {DINING_MENU.beverage.map((menu) => {
+                const { title, korean, price } = menu;
+                return (
+                  <MenuItem
+                    key={title}
+                    title={title}
+                    korean={korean}
+                    price={price}
+                  />
+                );
+              })}
             </ul>
           </div>
           <div className="col s12 m6">
-            <CardImage
-              imageAlt="shaved-ice"
-              imageSrc={imageShavedIce}
-              cardTitle="Traditional Shaved Ice"/>
-          </div>
-        </div>
-      </PageSection>
-      <PageSection title="Beverage">
-        <div className="row">
-          <div className="col s12 m6">
             <ul className="collection">
-              {DINING_MENU
-                .beverage
-                .map((menu) => {
-                  const {title, korean, price} = menu;
-                  return (<MenuItem key={title} title={title} korean={korean} price={price}/>)
-                })}
+              {DINING_MENU.bar.map((menu) => {
+                const { title, korean, price } = menu;
+                return (
+                  <MenuItem
+                    key={title}
+                    title={title}
+                    korean={korean}
+                    price={price}
+                  />
+                );
+              })}
             </ul>
           </div>
         </div>

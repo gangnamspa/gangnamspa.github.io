@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Route, Link, useHistory } from "react-router-dom";
+import { Route, useHistory } from "react-router-dom";
 import { isMobileOnly } from "react-device-detect";
 import Modal from "react-modal";
 import { stack as Menu } from "react-burger-menu";
@@ -81,6 +81,7 @@ const customBurgerMenuStyles = {
     lineHeight: "1.5",
     marginBottom: "20px",
     borderBottom: "1px solid",
+    color: "#fff",
   },
   bmOverlay: {
     background: "rgba(0, 0, 0, 0.3)",
@@ -98,11 +99,11 @@ function App() {
   const logoWidth = isMobileOnly ? "256" : "128";
   const logoClass = isMobileOnly ? "center-align" : "";
 
-  const openModal = () => setModalOpen(true);
+  // const openModal = () => setModalOpen(true);
   const closeModal = () => setModalOpen(false);
   const handleStateChange = (state) => setMenuOpen(state.isOpen);
   const closeMenu = (state) => setMenuOpen(false);
-  const toggleMenu = (state) => setMenuOpen(!menuOpen);
+  // const toggleMenu = (state) => setMenuOpen(!menuOpen);
   const onClickMenu = (e) => {
     closeMenu();
     history.push(e.target.dataset.url);
@@ -116,38 +117,49 @@ function App() {
           isOpen={menuOpen}
           onStateChange={handleStateChange}
         >
-          <a className="menu-item" onClick={onClickMenu} data-url="/">
+          <span className="menu-item" onClick={onClickMenu} data-url="/">
             HOME
-          </a>
-          <a className="menu-item" onClick={onClickMenu} data-url="/policy">
+          </span>
+          <span className="menu-item" onClick={onClickMenu} data-url="/policy">
             POLICY
-          </a>
-          <a className="menu-item" onClick={onClickMenu} data-url="/price">
+          </span>
+          <span className="menu-item" onClick={onClickMenu} data-url="/price">
             PRICE
-          </a>
-          <a className="menu-item" onClick={onClickMenu} data-url="/facilities">
+          </span>
+          <span
+            className="menu-item"
+            onClick={onClickMenu}
+            data-url="/facilities"
+          >
             FACILITIES
-          </a>
-          <a className="menu-item" onClick={onClickMenu} data-url="/dining">
+          </span>
+          <span className="menu-item" onClick={onClickMenu} data-url="/dining">
             DINING
-          </a>
-          <a className="menu-item" onClick={onClickMenu} data-url="/services">
+          </span>
+          <span
+            className="menu-item"
+            onClick={onClickMenu}
+            data-url="/services"
+          >
             SERVICES
-          </a>
-          <a className="menu-item" onClick={onClickMenu} data-url="/promotion">
+          </span>
+          <span
+            className="menu-item"
+            onClick={onClickMenu}
+            data-url="/promotion"
+          >
             PROMOTIONS & MEMBERSHIP
-          </a>
-          <a
+          </span>
+          <span
             className="menu-item"
             onClick={onClickMenu}
             data-url="/massagechair"
           >
             MASSAGE CHAIR
-          </a>
-          <a className="menu-item" onClick={onClickMenu} data-url="/contact">
+          </span>
+          <span className="menu-item" onClick={onClickMenu} data-url="/contact">
             CONTACT US
-          </a>
-
+          </span>
           <a
             className="menu-item"
             href="https://go.booker.com/location/GangnamSpa"
