@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "14f7ecce435eec2d22589570bbf9f00e",
+    "revision": "b2c259f0c27dfeac7996a97636f1d60a",
     "url": "/index.html"
   },
   {
-    "revision": "1bd2e362e2433cb09cd6",
+    "revision": "b0b5c9403385902f8c67",
     "url": "/static/css/main.87b0d9ac.chunk.css"
   },
   {
-    "revision": "f363a29a31538486b760",
-    "url": "/static/js/2.63e3aa23.chunk.js"
+    "revision": "c7f08f9b52534e3612b1",
+    "url": "/static/js/2.a3c22d2b.chunk.js"
   },
   {
     "revision": "d916bdeee074e24b650042bd2a3d71cf",
-    "url": "/static/js/2.63e3aa23.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.a3c22d2b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1bd2e362e2433cb09cd6",
-    "url": "/static/js/main.0d33b8dd.chunk.js"
+    "revision": "b0b5c9403385902f8c67",
+    "url": "/static/js/main.61bcd0b6.chunk.js"
   },
   {
     "revision": "79798cdf5221996f9ada",
@@ -88,24 +88,36 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/application-form.0f719f74.pdf"
   },
   {
+    "revision": "89ce5468dc22facfc23d2b10afb7ee87",
+    "url": "/static/media/bibimbap.89ce5468.jpg"
+  },
+  {
+    "revision": "f7cf37c377de510630d0050c22dc99e5",
+    "url": "/static/media/bulgogi.f7cf37c3.jpg"
+  },
+  {
     "revision": "358037af256c8b27b6abdf4fe2822b91",
     "url": "/static/media/chicken.358037af.jpg"
   },
   {
-    "revision": "ee54a7010b367944616a98ec2a09511b",
-    "url": "/static/media/coldnoodle.ee54a701.jpg"
+    "revision": "728bce11f7fa0039e909be19852c92d8",
+    "url": "/static/media/coldnoodle.728bce11.jpg"
   },
   {
     "revision": "b8fe09c3420c3c3fa7d611801f8dfcd8",
     "url": "/static/media/inada.b8fe09c3.jpg"
   },
   {
-    "revision": "4437bcc123045718ed26e78b4bab4f3b",
-    "url": "/static/media/kimbop.4437bcc1.jpg"
+    "revision": "3708496976cca2e7c38d25276605be7d",
+    "url": "/static/media/jampong.37084969.jpg"
   },
   {
     "revision": "acc66f9534efbd98142fa5d3141d7307",
     "url": "/static/media/logo.acc66f95.svg"
+  },
+  {
+    "revision": "4c8a53381d84b8fc6d526acf911f6a2a",
+    "url": "/static/media/massagechair.4c8a5338.jpg"
   },
   {
     "revision": "7782b05a56b457950e10d6f928c1c897",
@@ -120,8 +132,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/membership-cards-silver.8eeb6859.jpg"
   },
   {
+    "revision": "9621bfe0aa8caa5c421b21f92850835d",
+    "url": "/static/media/movie.9621bfe0.jpg"
+  },
+  {
     "revision": "f4f871fce31836a1566716316b2ea741",
     "url": "/static/media/nail-shop.f4f871fc.jpg"
+  },
+  {
+    "revision": "51f767c3bafbdcff415ba0874995cbb4",
+    "url": "/static/media/pancake.51f767c3.jpg"
+  },
+  {
+    "revision": "123cfcbbb2ff5bb40d598edab3047a52",
+    "url": "/static/media/porkrice.123cfcbb.jpg"
   },
   {
     "revision": "9eef974113057fd01b2d5802f3a83315",
@@ -136,11 +160,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/service3.1c8c0c65.jpg"
   },
   {
-    "revision": "bdb319a09862c174c49e1a2710c3a520",
-    "url": "/static/media/shaved_ice.bdb319a0.jpg"
-  },
-  {
     "revision": "ed40daa6b58e11a1e025dc80f25a0d46",
     "url": "/static/media/spa_etiquette.ed40daa6.png"
+  },
+  {
+    "revision": "318063e04c583ce44b390e42109e6875",
+    "url": "/static/media/tofusoup.318063e0.jpg"
   }
 ]);
