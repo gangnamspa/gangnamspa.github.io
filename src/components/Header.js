@@ -10,7 +10,10 @@ import {
 const Header = () => {
   return (
     <div className="row m-t-40">
-      <div className="col s12 l4 valign-wrapper">
+      <div
+        className="col s12 l4 valign-wrapper"
+        style={{ marginBottom: "10px" }}
+      >
         <i className="small material-icons m-r-10">local_phone</i>
         <span>
           <a href={`tel:+1${PHONE_NUMBERS}`}>{PHONE}</a>
@@ -18,7 +21,10 @@ const Header = () => {
           Click to Call
         </span>
       </div>
-      <div className="col s12 l4 valign-wrapper">
+      <div
+        className="col s12 l4 valign-wrapper"
+        style={{ marginBottom: "10px" }}
+      >
         <i className="small material-icons icon-align m-r-10">location_on</i>
         <span>
           {STREET}

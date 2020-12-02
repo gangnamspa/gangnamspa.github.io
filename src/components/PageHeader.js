@@ -11,28 +11,28 @@ const routes = {
   "/services": "Services",
   "/contact": "Contact",
   "/appointment": "Book a Treatment",
-  "/massagechair": "Massage Chairs"
+  "/massagechair": "Massage Chairs",
 };
 
-const PageHeader = props => {
-  const { content } = props;
+const PageHeader = (props) => {
+  const { content, children } = props;
   return (
     <div className="grey darken-3 white-text overflow-hidden p-t-30 p-b-50">
       <div className="row container">
         <div className="col s12">
           <Breadcrumbs
-            WrapperComponent={props => (
+            WrapperComponent={(props) => (
               <ul className="breadcrumbs">{props.children}</ul>
             )}
-            ActiveLinkComponent={props => (
+            ActiveLinkComponent={(props) => (
               <li className="active">{props.children}</li>
             )}
-            LinkComponent={props => <li>{props.children}</li>}
+            LinkComponent={(props) => <li>{props.children}</li>}
             mappedRoutes={routes}
           />
         </div>
-
         <h2 className="col s12 under">{content}</h2>
+        {children && children}
       </div>
     </div>
   );

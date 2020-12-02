@@ -3,7 +3,7 @@ import React from "react";
 import PageHeader from "../components/PageHeader";
 import PageSection from "../components/PageSection";
 
-import { DINING_MENU } from "../utils/constants";
+import { DINING_MENU, DINING_HOURS } from "../utils/constants";
 
 import imageChicken from "../images/food/chicken.jpg";
 import imageTofuSoup from "../images/food/tofusoup.jpg";
@@ -42,7 +42,15 @@ const DiningPage = () => {
   window.scrollTo(0, 0);
   return (
     <React.Fragment>
-      <PageHeader content="Dining" />
+      <PageHeader content="Dining" subContent={DINING_HOURS}>
+        <h5 className="col s12">
+          HOURS
+          <br />
+          Sun - Thu: 10am - 8:30pm
+          <br />
+          Fri - Sat: 10am - 9pm
+        </h5>
+      </PageHeader>
       {/* Soup */}
       <PageSection title="SOUP">
         <div className="row">

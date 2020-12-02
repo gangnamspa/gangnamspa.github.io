@@ -246,9 +246,10 @@ function App() {
                 />
               </a>
             </div>
-            {!isMobileOnly && (
-              <div className="col s12 l7">
-                <Header />
+
+            <div className="col s12 l7">
+              <Header />
+              {!isMobileOnly && (
                 <div
                   style={{ position: "fixed", top: 0, right: 0, zIndex: 999 }}
                 >
@@ -261,8 +262,8 @@ function App() {
                     BOOK A TREATMENT
                   </a>
                 </div>
-              </div>
-            )}
+              )}
+            </div>
           </div>
         </div>
 
