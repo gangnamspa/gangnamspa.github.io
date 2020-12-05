@@ -5,7 +5,12 @@ const PricePage = () => {
   window.scrollTo(0, 0);
   return (
     <div>
-      <PageHeader content="Pricing Chart" />
+      <PageHeader content="Pricing Chart">
+        <h5 className="col s12">
+          50% off of admission price with a valid ID for military, teacher,
+          firefighter, doctor, and police.
+        </h5>
+      </PageHeader>
       <div className="container p-t-20 p-b-20">
         <table
           className="table highlight"
