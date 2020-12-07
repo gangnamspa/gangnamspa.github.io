@@ -12,6 +12,9 @@ function Navbar() {
           <Link to="/policy">POLICY</Link>
         </li>
         <li>
+          <Link to="/guide">GUIDE</Link>
+        </li>
+        <li>
           <Link to="/price">PRICE</Link>
         </li>
         <li>

@@ -11,17 +11,16 @@ const PageSection = (props) => {
       ) : (
         <div className="col s12">
           <h6>
-            GangNam Spa Club is now offering a luxury wellness experience with
-            over 30,000 square feet of specialty baths, saunas, treatment rooms,
-            lounging and dining areas rooted in Korean culture. Our facilities
-            operate 24 hours a day and deliver a quality spa experience to
-            discerning clients who need pampering as well as value-conscious
-            clients who view the spa as a necessity.
+            GangNam Spa offers a luxury wellness experience with over 30,000
+            square feet of specialty baths, saunas rooms, lounging, and dining
+            areas rooted in Korean culture. Our facilities aim to deliver an
+            exceptional quality spa experience to discerning clients who need
+            pampering as well as value-conscious clients who view the spa as a
+            necessity.
           </h6>
           <h6>
-            We value our guests and strive to provide rewarding experience to
-            all. In order to do this, we encourage each guest to review and
-            understand our{" "}
+            We value our guests and strive to provide a rewarding experience to
+            all. Therefore, we encourage each guest to review and understand our{" "}
             <Link to="/policy">general policy & spa etiquette</Link>.
           </h6>
           <div className="center-align">

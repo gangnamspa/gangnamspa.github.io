@@ -1,6 +1,7 @@
 import HomePage from "./HomePage";
 import PolicyPage from "./PolicyPage";
 import PricePage from "./PricePage";
+import GuidePage from "./GuidePage";
 import FacilityPage from "./FacilityPage";
 import DiningPage from "./DiningPage";
 import PromoPage from "./PromoPage";
@@ -19,12 +20,13 @@ export {
   HomePage,
   PolicyPage,
   PricePage,
+  GuidePage,
   FacilityPage,
   DiningPage,
   PromoPage,
   ServicesPage,
   ContactPage,
-  MassageChairPage
+  MassageChairPage,
   // AboutPage, AdmissionPage, PlanPage, AppointmentPage, ExplorePage, SaunaPage,
   // LoungePage, BathPage,
 };

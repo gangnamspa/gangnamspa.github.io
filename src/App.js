@@ -13,6 +13,7 @@ import {
   HomePage,
   PolicyPage,
   PricePage,
+  GuidePage,
   FacilityPage,
   DiningPage,
   PromoPage,
@@ -122,6 +123,9 @@ function App() {
           </span>
           <span className="menu-item" onClick={onClickMenu} data-url="/policy">
             POLICY
+          </span>
+          <span className="menu-item" onClick={onClickMenu} data-url="/guide">
+            GUIDE
           </span>
           <span className="menu-item" onClick={onClickMenu} data-url="/price">
             PRICE
@@ -272,6 +276,7 @@ function App() {
         <Route exact path="/" component={HomePage} title="Home" />
         <Route exact path="/price" component={PricePage} title="Price" />
         <Route exact path="/policy" component={PolicyPage} title="Policy" />
+        <Route exact path="/guide" component={GuidePage} title="Guide" />
         <Route
           exact
           path="/facilities"

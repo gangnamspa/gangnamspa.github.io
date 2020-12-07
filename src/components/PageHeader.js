@@ -4,6 +4,7 @@ import Breadcrumbs from "react-router-dynamic-breadcrumbs";
 const routes = {
   "/": "Home",
   "/policy": "Policies",
+  "/guide": "Guide",
   "/price": "Pricing",
   "/facilities": "Facilities",
   "/dining": "Dining",
