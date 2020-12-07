@@ -54,7 +54,7 @@ const DiningPage = () => {
       {/* Soup */}
       <PageSection title="SOUP">
         <div className="row">
-          <div className="col s12 m6">
+          <div className="col s12 m10">
             <ul className="collection">
               {DINING_MENU.soup.map((menu) => {
                 const { title, korean, price } = menu;
@@ -69,7 +69,7 @@ const DiningPage = () => {
               })}
             </ul>
           </div>
-          <div className="col s12 m6">
+          <div className="col s12 m2">
             <CardImage imageAlt="tofu-soup" imageSrc={imageTofuSoup} />
           </div>
         </div>
@@ -78,7 +78,7 @@ const DiningPage = () => {
       {/* Vegetables */}
       <PageSection title="VEGETABLES">
         <div className="row">
-          <div className="col s12 m6">
+          <div className="col s10">
             <ul className="collection">
               {DINING_MENU.vegetables.map((menu) => {
                 const { title, korean, price } = menu;
@@ -99,7 +99,7 @@ const DiningPage = () => {
       {/* Rice */}
       <PageSection title="RICE">
         <div className="row">
-          <div className="col s12 m6">
+          <div className="col s12 m10">
             <ul className="collection">
               {DINING_MENU.rice.map((menu) => {
                 const { title, korean, price } = menu;
@@ -114,7 +114,7 @@ const DiningPage = () => {
               })}
             </ul>
           </div>
-          <div className="col s12 m6">
+          <div className="col s12 m2">
             <CardImage imageAlt="bibimbap-img" imageSrc={imageBibimbap} />
             <CardImage imageAlt="pork-rice-img" imageSrc={imagePorkrice} />
           </div>
@@ -124,7 +124,7 @@ const DiningPage = () => {
       {/* Noodles */}
       <PageSection title="NOODLES">
         <div className="row">
-          <div className="col s12 m6">
+          <div className="col s12 m10">
             <ul className="collection">
               {DINING_MENU.noodles.map((menu) => {
                 const { title, korean, price } = menu;
@@ -139,7 +139,7 @@ const DiningPage = () => {
               })}
             </ul>
           </div>
-          <div className="col s12 m6">
+          <div className="col s12 m2">
             <CardImage imageAlt="jampong-img" imageSrc={imageJampong} />
             <CardImage imageAlt="coldnoodle-img" imageSrc={imageColdNoodle} />
           </div>
@@ -149,7 +149,7 @@ const DiningPage = () => {
       {/* Meat and Other */}
       <PageSection title="BEEF, PORK, FISH & OTHER">
         <div className="row">
-          <div className="col s12 m6">
+          <div className="col s12 m10">
             <ul className="collection">
               {DINING_MENU.meat.map((menu) => {
                 const { title, korean, price } = menu;
@@ -164,7 +164,7 @@ const DiningPage = () => {
               })}
             </ul>
           </div>
-          <div className="col s12 m6">
+          <div className="col s12 m2">
             <CardImage
               imageAlt="bulgogi"
               imageSrc={imageBulgogi}
@@ -177,7 +177,7 @@ const DiningPage = () => {
       {/* Chicken */}
       <PageSection title="CHICKEN">
         <div className="row">
-          <div className="col s12 m6">
+          <div className="col s12 m10">
             <ul className="collection">
               {DINING_MENU.chicken.map((menu) => {
                 const { title, korean, price } = menu;
@@ -192,7 +192,7 @@ const DiningPage = () => {
               })}
             </ul>
           </div>
-          <div className="col s12 m6">
+          <div className="col s12 m2">
             <CardImage
               imageAlt="chicken-image"
               imageSrc={imageChicken}
@@ -205,7 +205,7 @@ const DiningPage = () => {
       {/* Fried */}
       <PageSection title="FRIED">
         <div className="row">
-          <div className="col s12 m6">
+          <div className="col s12 m10">
             <ul className="collection">
               {DINING_MENU.fried.map((menu) => {
                 const { title, korean, price } = menu;
@@ -220,7 +220,7 @@ const DiningPage = () => {
               })}
             </ul>
           </div>
-          <div className="col s12 m6">
+          <div className="col s12 m2">
             <CardImage imageAlt="pancake-img" imageSrc={imagePancake} />
           </div>
         </div>
