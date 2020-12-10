@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import PageHeader from "../components/PageHeader";
 import PageSection from "../components/PageSection";
 
@@ -15,23 +17,37 @@ const PromoPage = () => {
     <div>
       <PageHeader content="Promotion & Membership" />
       {CURRENT_PROMOTION && (
-        <>
-          <PageSection title="Current Promotion">
-            <div className="col s12">
-              <h4>{CURRENT_PROMOTION}</h4>
-              {/* <h5>
-            Currently, we are only open sales limited to quantity of 100 per
-            each yearly membership. We will post update for a six months and
-            monthly membership sales when it becomes available.
-          </h5> */}
-              {/* <h5>Yearly membership expiration date will be extended to May 2020 for the early
-            purchase through February 2019.</h5> */}
-            </div>
-          </PageSection>
-          <hr />
-        </>
+        <PageSection title={CURRENT_PROMOTION}>
+          <div className="col s12">
+            <h5>
+              For spa membership, please download and fill out the{" "}
+              <a
+                href={applicationForm}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Application Form
+              </a>{" "}
+              and send it to <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+            </h5>
+          </div>
+          <div className="col s12">
+            <h4 className="center-align">2 Months Membership</h4>
+            <ul className="gns">
+              <li>
+                <b>$595 per 2 months</b>
+              </li>
+              <li>
+                Access to everything in spa facility (check{" "}
+                <Link to="/facilities">facilities</Link> tab for more
+                information)
+              </li>
+              <li>Restaurant and services are excluded</li>
+            </ul>
+          </div>
+        </PageSection>
       )}
-
+      <hr />
       <PageSection title="Membership Card">
         <div className="col s12">
           <h5>

@@ -14,7 +14,7 @@ export const PRICE = {
   WEEKENDS: "$49",
 };
 export const PROMOTION_BANNER = `Due to temporary limited capacity, we're now taking reservations. As for walk-in customers, it'll be first come first serve. To make a reservation, please give us call at 281-859-9888`;
-export const CURRENT_PROMOTION = "";
+export const CURRENT_PROMOTION = "Admission Membership Promotion";
 export const ALL_RIGHTS = `© ${currentDate.getFullYear()} GangNam Spa. All rights reserved.`;
 
 export const DINING_MENU = {

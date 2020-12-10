@@ -7,7 +7,7 @@ import i6 from "./facility/4324.jpg";
 import i7 from "./facility/4329.jpg";
 import i8 from "./facility/4467.jpg";
 import i9 from "./facility/4506.jpg";
-import iMassageChair from "./facility/massagechair.jpg";
+import iMassageChair from "./facility/massagechair_1.jpg";
 import iMovie from "./facility/movie.jpg";
 
 export { i1, i2, i3, i4, i5, i6, i7, i8, i9, iMassageChair, iMovie };
