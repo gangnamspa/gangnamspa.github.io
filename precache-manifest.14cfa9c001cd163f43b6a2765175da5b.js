@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "878cede7f18a7be2f8c06d07a081708e",
+    "revision": "40861ae3fb11fe9a50709f999d3909ca",
     "url": "/index.html"
   },
   {
-    "revision": "d1b39adcb3f3a00df5d4",
+    "revision": "30453a140ae7b66eefb8",
     "url": "/static/css/main.87b0d9ac.chunk.css"
   },
   {
-    "revision": "eee061955b146368e3bb",
-    "url": "/static/js/2.52471298.chunk.js"
+    "revision": "a69fc97846a91daf11e6",
+    "url": "/static/js/2.6e796eef.chunk.js"
   },
   {
     "revision": "d916bdeee074e24b650042bd2a3d71cf",
-    "url": "/static/js/2.52471298.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.6e796eef.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d1b39adcb3f3a00df5d4",
-    "url": "/static/js/main.3f3f3d59.chunk.js"
+    "revision": "30453a140ae7b66eefb8",
+    "url": "/static/js/main.26ee74f2.chunk.js"
   },
   {
     "revision": "79798cdf5221996f9ada",
@@ -116,8 +116,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/logo.acc66f95.svg"
   },
   {
-    "revision": "4c8a53381d84b8fc6d526acf911f6a2a",
-    "url": "/static/media/massagechair.4c8a5338.jpg"
+    "revision": "6007032e3e72ca1cc0df5e4ffd1e9d80",
+    "url": "/static/media/massagechair_1.6007032e.jpg"
   },
   {
     "revision": "7782b05a56b457950e10d6f928c1c897",
