@@ -4,7 +4,7 @@ import { isMobileOnly } from "react-device-detect";
 import Modal from "react-modal";
 import { stack as Menu } from "react-burger-menu";
 
-import { PROMOTION_BANNER } from "./utils/constants";
+import { PROMOTION_BANNER, currentDate } from "./utils/constants";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -94,9 +94,8 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const history = useHistory();
-
   const enableModal = false;
-  const enableBanner = false;
+  const enableBanner = currentDate.getFullYear() !== 2021;
   const logoWidth = isMobileOnly ? "256" : "128";
   const logoClass = isMobileOnly ? "center-align" : "";
 
